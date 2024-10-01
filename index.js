@@ -1,5 +1,28 @@
-const selecteOption=document.getElementById("field-type").value
+const selecteOption=document.getElementById("field-type")
 const fieldName=document.getElementById("field-name")
+// Add field
+function addfield(){
+        if(!selecteOption.value){
+            alert("select the input type..!")
+        }
+        switch (selecteOption.value) {
+        case 'text':
+          addtext();
+          break;
+        case 'checkbox':
+          addcheckbox();
+          break;
+        case 'radio':
+          addradio();
+          break;
+        default:
+          console.log("Invalid option selected");
+      }
+      
+
+}
+
+
 //text Field
 function addtext(){
     const preview=document.getElementById("preview-field")
@@ -41,7 +64,7 @@ function addradio(){
     const input=document.createElement('input')
     input.type='radio'
     input.name='radio-group'
-    
+
     div.appendChild(label)
     div.appendChild(input)
     preview.appendChild(div)
