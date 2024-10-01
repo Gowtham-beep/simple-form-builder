@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Form Builder</title>
+</head>
+<body>
+    <h1>Simple Form Builder</h1>
+    <!-- Form builder -->
+    <div>
+        <select name="field-type" id="field-type">
+            <option value="" disabled selected hidden>Select an option</option>
+            <option value="text">Text Field</option>
+            <option value="checkbox">Check Box</option>
+            <option value="radio">Radio Button</option>
+        </select>
+    </div><br>
+    <!--field label -->
+    <div>
+        <label for="field-name">Enter the field label</label>
+        
+        <input type="text" placeholder="Filed label">
+    </div>
+        <br>
+    <button  onclick="addfield()">Add Field</button>
+    <!-- Preview field -->
+     <hr>
+     <div>
+        <h2>Preview Field</h2>
+        <div id="Preview-field"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
