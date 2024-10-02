@@ -18,7 +18,8 @@ A dynamic form builder web application that allows users to add text fields, che
 - **JavaScript**: For dynamic form generation
 - **Tailwind CSS**: For styling the UI
 
-  ![Screenshot of the Simple Form Builder](form builder.jpg)
+ ![Form Builder Preview](form%20builder.jpg)
+
 
 
 ## Project Setup
